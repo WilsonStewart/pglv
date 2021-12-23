@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "defaultMode": "window",
   "port": 0,
-  "documentRoot": "/resources/",
+  "documentRoot": "/resources/app/build",
   "url": "/",
   "enableServer": true,
   "enableNativeAPI": true,
@@ -14,11 +14,7 @@
   "nativeBlockList": [],
   "globalVariables": {
     "TEST1": "Hello",
-    "TEST2": [
-      2,
-      4,
-      5
-    ],
+    "TEST2": [2, 4, 5],
     "TEST3": {
       "value1": 10,
       "value2": {}
@@ -34,33 +30,28 @@
       "fullScreen": false,
       "alwaysOnTop": false,
       "icon": "/resources/icons/appIcon.png",
-      "enableInspector": true,
       "borderless": false,
       "maximize": false,
       "hidden": false,
       "resizable": true,
-      "exitProcessOnClose": false
+      "exitProcessOnClose": true
     },
     "browser": {
       "globalVariables": {
         "TEST": "Test value browser"
       },
-      "nativeBlockList": [
-        "filesystem.*"
-      ]
+      "nativeBlockList": ["filesystem.*"]
     },
     "cloud": {
       "url": "/resources/#cloud",
-      "nativeAllowList": [
-        "app.*"
-      ]
+      "nativeAllowList": ["app.*"]
     }
   },
   "cli": {
     "binaryName": ".",
-    "resourcesPath": "/resources/",
+    "resourcesPath": "/resources/app/build",
     "extensionsPath": "/extensions/",
-    "clientLibrary": "/resources/js/neutralino.js",
+    "clientLibrary": "/resources/neutralino.js",
     "binaryVersion": "4.0.0",
     "clientVersion": "3.0.0"
   }
