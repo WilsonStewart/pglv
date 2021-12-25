@@ -1,0 +1,12 @@
+.toolbar-container {
+  width: 100%;
+  background-color: #161616;
+  align-items: center;
+  /* padding: 1rem; */
+  display: flex;
+}
+
+.toolbar-container button {
+  background-color: #666666;
+  color: white;
+}

@@ -1,0 +1,29 @@
+.log-list-table {
+  color: white;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.log-list-table tbody td {
+}
+
+.log-list-header-td {
+  background-color: #1c2e3e;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.log-list-td {
+  background-color: red;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.log-list-td-time {
+  color: rgb(117, 116, 116);
+}
+
+.log-list-td-message {
+  display: flex;
+  overflow-x: hidden;
+}
